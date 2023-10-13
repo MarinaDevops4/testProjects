@@ -16,34 +16,31 @@
 - Laravel 5.1.3v
 
 ## Instalación
+- Clona este repositorio en tu máquina local:
+   git clone https://github.com/MarinaDevops4/testProjects.git
+  
+-  Accede al directorio del proyecto
+   cd testProjects-laraveltest
+   
+- Instala las dependencias del proyecto Composer:
 
+    composer install
+- Copia el archivo .env.example a .env y configura las variables de entorno, como la conexión a la base de datos y la clave de cifrado.
 
-<ol>
-    <li>Clona este repositorio en tu máquina local:</li>
-    <pre><code>git clone https://github.com/MarinaDevops4/testProjects.git</code></pre>
+  cp .env.example .env
 
-    <li>Accede al directorio del proyecto:</li>
-    <pre><code>cd testProjects-laraveltest</code></pre>
+- Genera una nueva clave de aplicación:
+   php artisan key:generate
 
-    <li>Instala las dependencias del proyecto Composer:</li>
-    <pre><code>composer install</code></pre>
+- Ejecuta las migraciones para configurar la base de datos:
+   php artisan migrate
 
-    <li>Copia el archivo .env.example a .env y configura las variables de entorno, como la conexión a la base de datos y la clave de cifrado.</li>
-    <pre><code>cp .env.example .env</code></pre>
+- Ejecuta el comando para compilar los recursos font-end
+   npm install
+   npm run dev
 
-    <li>Genera una nueva clave de aplicación:</li>
-    <pre><code>php artisan key:generate</code></pre>
+- Inicia el servidor de desarrollo de Laravel
+   php artisan serve
 
-    <li>Ejecuta las migraciones para configurar la base de datos:</li>
-    <pre><code>php artisan migrate</code></pre>
-
-    <li>Ejecuta el comando para compilar los recursos front-end:</li>
-    <pre><code>npm install</code></pre>
-    <pre><code>npm run dev</code></pre>
-
-    <li>Inicia el servidor de desarrollo de Laravel:</li>
-    <pre><code>php artisan serve</code></pre>
-
-    <li>Abre tu navegador y entra en <a href="http://localhost:8000">http://localhost:8000</a> para ver la aplicación.</li>
-</ol>
+- Abre tu navegador y entra en http://localhost:8000 para ver la aplicación formatea este texto
 
