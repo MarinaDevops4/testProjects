@@ -17,30 +17,28 @@
 
 ## Instalación
 - Clona este repositorio en tu máquina local:
-   git clone https://github.com/MarinaDevops4/testProjects.git
+   <p>git clone https://github.com/MarinaDevops4/testProjects.git</p>
   
 -  Accede al directorio del proyecto
-   cd testProjects-laraveltest
+
+   <p>cd testProjects-laraveltest</p> 
    
 - Instala las dependencias del proyecto Composer:
-
-    composer install
+    <p>composer install</p>
 - Copia el archivo .env.example a .env y configura las variables de entorno, como la conexión a la base de datos y la clave de cifrado.
-
-  cp .env.example .env
+    <p>cp .env.example .env</p>
 
 - Genera una nueva clave de aplicación:
-   php artisan key:generate
+   <p>php artisan key:generate</p>
 
 - Ejecuta las migraciones para configurar la base de datos:
-   php artisan migrate
+   <p>php artisan migrate</p>
 
 - Ejecuta el comando para compilar los recursos font-end
-   npm install
-   npm run dev
-
+  <p>npm install</p> 
+   <p>npm run dev</p>
 - Inicia el servidor de desarrollo de Laravel
-   php artisan serve
+  <p>php artisan serve</p> 
 
-- Abre tu navegador y entra en http://localhost:8000 para ver la aplicación formatea este texto
+- Abre tu navegador y entra en <a href="http://localhost:8000">localhost:8000</a> para ver la aplicación formatea este texto
 
